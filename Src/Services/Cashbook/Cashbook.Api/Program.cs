@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IParticularRepo, ParticularRepo>();
 builder.Services.AddScoped<ITransactionRepo, TransactionRepo>();
 builder.Services.AddScoped<ICashbookContext, CashbookContext>();
-
+builder.Services.AddScoped<ICollection,Comparer>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
